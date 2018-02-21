@@ -1,0 +1,23 @@
+{
+  "name": "scrappy",
+  "version": "1.0.0",
+  "description": "Program that gets contact information from the company website based on provided email address",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xargo16/Scrappy.git"
+  },
+  "author": "Dawid Burdun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xargo16/Scrappy/issues"
+  },
+  "homepage": "https://github.com/xargo16/Scrappy#readme",
+  "dependencies": {
+    "knwl.js": "^1.0.2",
+    "request": "^2.83.0"
+  }
+}
