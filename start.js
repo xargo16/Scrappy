@@ -1,9 +1,6 @@
-// External modules
-const Knwl = require("./node_modules/knwl.js");
-const request = require('request');
-
 // My modules
 const email_module = require("./node_modules/email_module");
+const web_scraper_module = require("./node_modules/web_scraper_module");
 
 var inputFromUser = process.argv[2];
 
@@ -20,4 +17,6 @@ if(!email_module.inputIsValidEmailAddress(inputFromUser)){
 }
 
 var domainName = email_module.getDomainNameFromEmailAddress(inputFromUser);
-console.log(domainName);
+var url = "http://www." + domainName;
+
+web_scraper_module.printDetailsAboutCompanyFromWebsiteUrl(url);
