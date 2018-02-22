@@ -19,4 +19,4 @@ if(!email_module.inputIsValidEmailAddress(inputFromUser)){
 var domainName = email_module.getDomainNameFromEmailAddress(inputFromUser);
 var url = "http://www." + domainName;
 
-web_scraper_module.printDetailsAboutCompanyFromWebsiteUrl(url);
+web_scraper_module.startScraping(url);
